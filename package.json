@@ -27,6 +27,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-1": "^6.13.0",
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-sass": "^2.3.2",
