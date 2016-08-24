@@ -1,0 +1,26 @@
+@import "common/layout/width";
+@import "common/size";
+
+.dash-wrapper {
+  $padding: $dash-size-gamma;
+  padding-left: $padding;
+  padding-right: $padding;
+
+  @include dash-width(medium) {
+    $padding: $dash-size-delta;
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+
+  @include dash-width(large) {
+    $padding: calc(#{$dash-size-delta} + (100vw - #{$dash-width-large}) / 2);
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+
+  @include dash-width(huge) {
+    $padding: calc(#{$dash-size-theta} + (100vw - #{$dash-width-huge}) / 2);
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+}

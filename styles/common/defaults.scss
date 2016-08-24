@@ -1,0 +1,16 @@
+// Default element styles
+// TODO: Should these be an optional include?
+
+body { @extend .dash-body; }
+
+h1 { @extend .dash-text-heading-alpha; }
+h2 { @extend .dash-text-heading-beta; }
+h3 { @extend .dash-text-heading-gamma; }
+h4 { @extend .dash-text-heading-delta; }
+
+body { @extend .dash-text-body; }
+p { @extend .dash-text-body; }
+a { @extend .dash-text-link; }
+caption { @extend .dash-text-footnote; }
+pre { @extend .dash-text-code; }
+code { @extend .dash-text-code; }

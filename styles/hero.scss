@@ -1,0 +1,36 @@
+@import "common/layout/width";
+@import "common/units";
+
+.dash-hero {
+  display: block;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: units(2);
+  background-image: url({{domain}}/images/illustrations/hero.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.dash-hero-title {
+  @extend .dash-text-weight-eta;
+  font-size: 18vmin;
+  line-height: 0.9;
+  display: block;
+  text-align: center;
+  margin: 0;
+
+  @include dash-width(medium) {
+    max-width: 50vw;
+    font-size: 14vmin;
+  }
+
+  @include dash-width(large) {
+    // font-size: 20vw;
+  }
+}
+
+// TODO: Alternate height versions

@@ -1,0 +1,24 @@
+@import "colour";
+@import "border";
+
+$sides: (
+  'top', 'right', 'bottom', 'left'
+);
+
+@mixin dash-outline-all {
+  $parent: &;
+  $selector: 'dash-outline';
+
+  @at-root #{$parent}.#{$selector} {
+    border: $dash-border;
+  }
+
+  @each $side in $sides {
+    $selector: 'dash-outline-#{$side}';
+    @at-root #{$parent}.#{$selector} {
+      border-#{$side}: $dash-border;
+    }
+  }
+}
+
+@include dash-outline-all;

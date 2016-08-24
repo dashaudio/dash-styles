@@ -1,0 +1,53 @@
+@import "common/units";
+@import "common/colour";
+@import "common/text";
+@import "common/padding";
+@import "common/size";
+@import "wrapper";
+
+.dash-navigation {
+  @extend .dash-wrapper;
+  @extend .dash-colour-background-azure;
+  @extend .dash-text-weight-epsilon;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.dash-navigation-item {
+  @extend .dash-text-caps;
+  @extend .dash-text-size-alpha;
+  @extend .dash-text-leading-label;
+
+  display: inline-flex;
+  padding: $dash-size-gamma 0;
+  padding-right: $dash-size-delta;
+  flex-grow: 0;
+  color: $dash-colour-white;
+  white-space: nowrap;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  a {
+    @extend .dash-text-leading-label;
+    color: $dash-colour-white;
+
+    &:hover {
+      color: $dash-colour-black;
+    }
+  }
+}
+
+.dash-navigation-spacer {
+  @extend .dash-navigation-item;
+  display: none;
+  flex-grow: 1;
+
+  @include dash-width(medium) {
+    display: inline-flex;
+  }
+
+}

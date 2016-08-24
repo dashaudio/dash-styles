@@ -1,0 +1,38 @@
+@import "size";
+
+$sides: (
+  'top', 'right', 'bottom', 'left'
+);
+
+@mixin dash-pad-all {
+  $parent: &;
+  $selector: 'dash-pad';
+
+  @at-root #{$parent}.#{$selector} {
+    padding: map-get($dash-sizes, 'delta');
+  }
+
+  @each $side in $sides {
+    $selector: 'dash-pad-#{$side}';
+    @at-root #{$parent}.#{$selector} {
+      padding-#{$side}: map-get($dash-sizes, 'delta');;
+    }
+  }
+
+  @each $name, $size in $dash-sizes {
+    $selector: 'dash-pad-#{$name}';
+
+    @at-root #{$parent}.#{$selector} {
+      padding: $size;
+    }
+
+    @each $side in $sides {
+      $selector: 'dash-pad-#{$side}-#{$name}';
+      @at-root #{$parent}.#{$selector} {
+        padding-#{$side}: $size;
+      }
+    }
+  }
+}
+
+@include dash-pad-all;

@@ -1,0 +1,150 @@
+@import "layout/width";
+@import "colour";
+@import "units";
+@import "fonts";
+@import "transition/colour";
+
+// Sizes
+
+$dash-text-sizes: (
+  alpha: 12px,
+  beta: 16px,
+  gamma: 18px,
+  delta: 22px,
+  epsilon: 32px,
+  zeta: 44px
+);
+
+@mixin dash-text-size-all {
+  @each $name, $size in $dash-text-sizes {
+    $parent: &; $selector: 'dash-text-size-#{$name}';
+    @at-root #{$parent}.#{$selector}, .#{$selector} #{$parent} {
+      font-size: $size;
+    }
+  }
+}
+
+@include dash-text-size-all;
+
+// Weights
+
+$dash-text-weights: (
+  alpha: 100,
+  beta: 300,
+  gamma: 400,
+  delta: 500,
+  epsilon: 600,
+  zeta: 700,
+  eta: 800,
+  theta: 900
+);
+
+@mixin dash-text-weight-all {
+  @each $name, $weight in $dash-text-weights {
+    $parent: &; $selector: 'dash-text-weight-#{$name}';
+    @at-root #{$parent}.#{$selector}, .#{$selector} #{$parent} {
+      font-weight: $weight;
+    }
+  }
+}
+
+@include dash-text-weight-all;
+
+// Leading
+
+.dash-text-leading-body {
+  line-height: 1.5;
+}
+
+.dash-text-leading-label {
+  line-height: 1.0;
+}
+
+// Basic styles
+
+.dash-text-base {
+  @extend .dash-text-leading-body;
+  font-family: proxima-nova, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $dash-colour-text;
+}
+
+.dash-text-body {
+  @extend .dash-text-base;
+  @extend .dash-text-size-beta;
+  @extend .dash-text-weight-gamma;
+  @include dash-text-size-all;
+  @include dash-text-weight-all;
+  @include dash-colour-all;
+  color: $dash-colour-text;
+  letter-spacing: .01em;
+  margin: 1em 0;
+}
+
+.dash-text-link {
+  @extend .dash-text-base;
+  @extend .dash-transition-colour;
+  color: $dash-colour-black;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    @extend .dash-transition-colour;
+    color: $dash-colour-azure;
+  }
+}
+
+// Headings
+
+$dash-text-headings: (
+  alpha: (size: 'zeta'),
+  beta: (size: 'epsilon'),
+  gamma: (size: 'delta'),
+  delta: (size: 'gamma')
+);
+
+@each $name, $options in $dash-text-headings {
+  .dash-text-heading-#{$name} {
+    @extend .dash-text-base;
+    @extend .dash-text-size-#{map-get($options, 'size')};
+    @extend .dash-text-weight-eta;
+    @include dash-colour-all;
+    color: $dash-colour-black;
+    margin: 1em 0;
+
+    &:first-of-type {
+      // margin-top: 0;
+    }
+  }
+}
+
+.dash-text-heading {
+  @extend .dash-text-heading-beta;
+}
+
+// Other styles
+
+.dash-text-footnote {
+  @extend .dash-text-base;
+  @extend .dash-text-size-alpha;
+  @extend .dash-text-weight-gamma;
+  @include dash-colour-all;
+  color: $dash-colour-text;
+  letter-spacing: .03em;
+  line-height: 1.75;
+}
+
+.dash-text-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.dash-text-code {
+  @extend .dash-text-base;
+  @extend .dash-text-size-beta;
+  font-family: monospace;
+  max-width: 100%;
+  overflow: auto;
+  margin: 1em 0;
+}

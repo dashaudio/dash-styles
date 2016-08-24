@@ -1,0 +1,8 @@
+.dash-animation-rotate {
+  animation: 0.75s linear 0s infinite dash-animation-rotate;
+}
+
+@keyframes dash-animation-rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}

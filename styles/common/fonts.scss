@@ -1,0 +1,89 @@
+// Weights: 100, 300, 400, 500, 600, 700, 800, 900
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 100; // Thin
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-thin.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-thin.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-thin.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-thin.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 300; // Light
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-light.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-light.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-light.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-light.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 400; // Regular
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-regular.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-regular.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-regular.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-regular.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 500; // Medium
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-medium.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-medium.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-medium.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-medium.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 600; // Semibold
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-semibold.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-semibold.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-semibold.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-semibold.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-semibold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 700; // Bold
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-bold.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-bold.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-bold.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-bold.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 800; // Extra Bold
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-extra-bold.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-extra-bold.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-extra-bold.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-extra-bold.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-extra-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  font-style: normal;
+  font-weight: 900; // Black
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-black.eot);
+  src: url({{domain}}/fonts/proxima-nova/proxima-nova-black.eot?#iefix) format('embedded-opentype'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-black.woff2) format('woff2'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-black.woff) format('woff'),
+       url({{domain}}/fonts/proxima-nova/proxima-nova-black.ttf) format('truetype');
+}

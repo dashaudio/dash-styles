@@ -1,0 +1,138 @@
+// Basic
+
+$dash-colour-black: #222222;
+$dash-colour-medium: #cccccc;
+$dash-colour-white: #ffffff;
+
+// Palette
+
+$dash-colour-azure: #5284FF;
+$dash-colour-peach-red: #FF836B;
+$dash-colour-blossom-pink: #F7CBDF;
+$dash-colour-yellow-gold: #FFD46B;
+$dash-colour-sand: #C7B487;
+$dash-colour-tropical-green: #6AE2A6;
+
+// Special
+
+$dash-colour-text: #626262;
+$dash-colour-outline: #eeeeee;
+
+// Generated colour classes
+
+$dash-colours: (
+  black: $dash-colour-black,
+  medium: $dash-colour-medium,
+  white: $dash-colour-white,
+
+  azure: $dash-colour-azure,
+  peach-red: $dash-colour-peach-red,
+  blossom-pink: $dash-colour-blossom-pink,
+  yellow-gold: $dash-colour-yellow-gold,
+  sand: $dash-colour-sand,
+  tropical-green: $dash-colour-tropical-green,
+
+  text: $dash-colour-text,
+  outline: $dash-colour-outline
+);
+
+@mixin dash-colour-all($parent: &) {
+  @each $name, $colour in $dash-colours {
+    $parent: &; $selector: 'dash-colour-#{$name}';
+    @at-root #{$parent}.#{$selector}, .#{$selector} #{$parent} {
+      color: $colour;
+    }
+  }
+}
+
+@mixin dash-colour-background-all {
+  @each $name, $colour in $dash-colours {
+    $parent: &; $selector: 'dash-colour-background-#{$name}';
+    @at-root #{$parent}.#{$selector}, .#{$selector} #{$parent} {
+      background-color: $colour;
+    }
+  }
+}
+
+@include dash-colour-all;
+@include dash-colour-background-all;
+
+// Miscellaneous
+
+.dash-disabled {
+  opacity: 0.35;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Legacy Colours
+// TODO: Remove all of these
+
+$dash-colour-dark: #2c3958 !default;
+$dash-colour-light: #f1f3f4 !default;
+
+$dash-colour-blue: #00BEF6;
+$dash-colour-navy: #645DE8;
+$dash-colour-purple: #BE5FE9;
+$dash-colour-orange: #FFA500;
+$dash-colour-sorbet: #FF72BE;
+$dash-colour-yellow: #FADE09;
+$dash-colour-green: #ACEC4B;
+$dash-colour-turquoise: #3CC8D1;
+$dash-colour-red: #FF4444;
+
+$dash-colour-primary: $dash-colour-blue !default;
+$dash-colour-secondary: $dash-colour-navy !default;
+$dash-colour-tertiary: $dash-colour-purple !default;
+$dash-colour-quaternary: $dash-colour-turquoise !default;
+
+$dash-colour-warning: #A71C4D !default;
+$dash-colour-success: #70CE5D !default;
+
+$dash-colour-list: (
+  $dash-colour-primary,
+  $dash-colour-secondary,
+  $dash-colour-tertiary,
+  $dash-colour-quaternary
+);
+
+$dash-colour-white: #FFFFFF;
+$dash-colour-black: #000000;
+
+$dash-colour-chart-list: (
+  $dash-colour-blue,
+  $dash-colour-navy,
+  $dash-colour-purple,
+  $dash-colour-orange,
+  $dash-colour-sorbet,
+  $dash-colour-yellow,
+  $dash-colour-green,
+  $dash-colour-turquoise
+);
+
+$dash-colour-valid: green;
+$dash-colour-invalid: red;
+
+$dash-gradient-dark: (#303047, #303047) !default;
+$dash-gradient-medium: (#fafafa, #f9f9f9) !default;
+$dash-gradient-light: (#FA1C68, #FB3363, #FD575F) !default;
+
+$dash-gradient-primary: (#23B3EF, #19B7E8, #24C9D1) !default;
+$dash-gradient-secondary: (#FC2B6F, #FF4F74, #FA6767) !default;
+$dash-gradient-tertiary: (#F95534, #FF7644, #FA8701) !default;
+$dash-gradient-quaternary: (#878CF2, #42A4EF, #03B7F2) !default;

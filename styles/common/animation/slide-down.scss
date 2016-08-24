@@ -1,0 +1,10 @@
+.dash-animation-slide-down {
+  animation: dash-animation-slide-down 1.5s;
+  animation-fill-mode: forwards;
+  transform: scale(1, 0);
+}
+
+@keyframes dash-animation-slide-down {
+    from { transform: scale(1, 0); }
+    to { transform: scale(1, 1); }
+}

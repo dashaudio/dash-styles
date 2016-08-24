@@ -1,0 +1,10 @@
+.dash-animation-appear {
+  animation: dash-animation-appear 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes dash-animation-appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

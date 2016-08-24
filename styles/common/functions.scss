@@ -1,0 +1,3 @@
+@function lightness($colour) {
+  @return ( (red($colour)*299) + (green($colour)*587) + (blue($colour)*114) ) / 1000;
+}

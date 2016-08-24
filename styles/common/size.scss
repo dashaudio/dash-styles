@@ -1,0 +1,21 @@
+// Base sizing
+
+$dash-size-alpha: 5px;
+$dash-size-beta : 10px;
+$dash-size-gamma : 15px;
+$dash-size-delta : 30px;
+$dash-size-epsilon : 60px;
+$dash-size-zeta : 90px;
+$dash-size-eta : 120px;
+$dash-size-theta : 150px;
+
+$dash-sizes: (
+  alpha: $dash-size-alpha,
+  beta: $dash-size-beta,
+  gamma: $dash-size-gamma,
+  delta: $dash-size-delta,
+  epsilon: $dash-size-epsilon,
+  zeta: $dash-size-zeta,
+  eta: $dash-size-eta,
+  theta: $dash-size-theta
+);

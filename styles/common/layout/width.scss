@@ -1,0 +1,28 @@
+$dash-width-small: 550px !default;
+$dash-width-medium: 550px !default;
+$dash-width-large: 1000px !default;
+$dash-width-huge: 1600px !default;
+
+@mixin dash-width($width) {
+
+    @if $width == all {
+        @content;
+    }
+
+    @else if $width == small {
+        @media screen and (max-width: $dash-width-small) { @content; }
+    }
+
+    @else if $width == medium {
+        @media screen and (min-width: $dash-width-medium) { @content; }
+    }
+
+    @else if $width == large {
+        @media screen and (min-width: $dash-width-large) { @content; }
+    }
+
+    @else if $width == huge {
+        @media screen and (min-width: $dash-width-huge) { @content; }
+    }
+
+}

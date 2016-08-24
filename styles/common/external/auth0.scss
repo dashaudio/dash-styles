@@ -1,0 +1,133 @@
+@import "../units";
+@import "../colour";
+@import "../icon";
+@import "../text";
+
+// Auth0 Lock re-skin
+
+.dash-body #a0-lock.a0-theme-default {
+  .a0-overlay.a0-active {
+    @extend .dash-text-body !optional;
+    background: rgba($dash-colour-light, 0.9);
+
+    .a0-panel {
+      box-shadow: none;
+      width: units(34);
+
+      .a0-error {
+        background: $dash-colour-warning;
+        font-weight: 500;
+      }
+
+      .a0-header, .a0-icon-container {
+        @extend .dash-icon-logo-text;
+        background-color: $dash-colour-medium;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto units(1.3);
+        min-height: units(5);
+
+        .a0-image, h1 {
+          display: none;
+        }
+
+        .a0-close {
+          svg { display: none; }
+          box-shadow: unset;
+          border: unset;
+          background-color: unset;
+          width: units(2.5);
+          height: units(2.5);
+          background-size: 35%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          @extend .dash-icon-close-dark;
+        }
+      }
+
+      .a0-mode-container {
+        .a0-body-content {
+          .a0-zocial {
+            border-radius: 50%;
+
+            &.a0-block {
+              border-radius: unset;
+            }
+          }
+
+          .a0-db-actions, .a0-options {
+            margin: units(-3) units(-3) units(3);
+
+            .a0-switch {
+              border: unset;
+              border-radius: unset;
+
+              span {
+                @extend .dash-text-caption !optional;
+                padding: units(3) 0;
+                width: 50%;
+                background-color: darken($dash-colour-medium, 10%);
+
+                &.a0-active {
+                  background-color: $dash-colour-dark;
+                }
+              }
+            }
+          }
+
+          .a0-header {
+            background: none;
+            min-height: unset;
+          }
+
+          .a0-forgot-pass {
+            font-size: units(1.2);
+            text-decoration: none;
+            font-weight: 400;
+          }
+
+          .a0-input-box {
+            border: 1px solid $dash-colour-outline;
+            background: unset;
+            border-radius: unset;
+
+            input {
+              border-left: 1px solid $dash-colour-outline;
+            }
+          }
+        }
+
+        .a0-action {
+          background-color: $dash-colour-medium;
+          height: units(8.5);
+          padding-top: units(3.5);
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+
+          .a0-primary {
+            @extend .dash-text-caption !optional;
+            display: inline-block;
+            position: unset;
+            left: unset;
+            color: $dash-colour-text;
+            width: unset !important;
+            height: units(5) !important;
+            background-color: unset !important;
+            padding: 0 units(5);
+            margin: 0 auto;
+            line-height: units(1.2);
+            text-indent: unset;
+            border: 2px solid $dash-colour-dark;
+            border-radius: unset;
+            &:after { content: none; }
+          }
+        }
+      }
+
+      .a0-footer {
+        display: none;
+      }
+    }
+  }
+}

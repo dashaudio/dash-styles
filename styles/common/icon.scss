@@ -1,0 +1,72 @@
+@import "../common/animation/rotate";
+
+.dash-icon-default {
+  background-image: url({{domain}}/images/icons/default.svg);
+}
+
+.dash-icon-logo {
+  background-image: url({{domain}}/images/icons/logo.svg);
+}
+
+.dash-icon-logo-text {
+  background-image: url({{domain}}/images/icons/logo-text.svg);
+}
+
+.dash-icon-loading {
+  @extend .dash-animation-rotate;
+  background-image: url({{domain}}/images/icons/loading.svg);
+}
+
+.dash-icon-error {
+  background-image: url({{domain}}/images/icons/error.svg);
+}
+
+.dash-icon-feed {
+  background-image: url({{domain}}/images/icons/feed.svg);
+}
+
+.dash-icon-help {
+  background-image: url({{domain}}/images/icons/help.svg);
+}
+
+.dash-icon-tick {
+  background-image: url({{domain}}/images/icons/tick.svg);
+}
+
+// Arrows
+
+.dash-icon-arrow-up {
+  background-image: url({{domain}}/images/icons/arrow-up.svg);
+}
+
+.dash-icon-arrow-right {
+  background-image: url({{domain}}/images/icons/arrow-right.svg);
+}
+
+.dash-icon-arrow-down {
+  background-image: url({{domain}}/images/icons/arrow-down.svg);
+}
+
+.dash-icon-arrow-left {
+  background-image: url({{domain}}/images/icons/arrow-left.svg);
+}
+
+// Bars
+
+.dash-icon-bar-horizontal {
+  background-image: url({{domain}}/images/icons/bar-horizontal.svg);
+}
+
+.dash-icon-bar-vertical {
+  background-image: url({{domain}}/images/icons/bar-vertical.svg);
+}
+
+// Close
+
+.dash-icon-close-dark {
+  background-image: url({{domain}}/images/icons/close-dark.svg);
+}
+
+.dash-icon-close-light {
+  background-image: url({{domain}}/images/icons/close-light.svg);
+}
