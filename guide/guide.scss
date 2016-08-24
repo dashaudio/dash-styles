@@ -1,0 +1,46 @@
+@import "../styles/styles";
+
+.guide-row {
+  clear: both;
+}
+
+.guide-column {
+  width: 33.333%;
+  float: left;
+  padding: 0 30px;
+}
+
+.guide-tile {
+  width: 33.333%;
+  float: left;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.guide-column:first-of-type {
+  padding-left: 0;
+}
+
+.guide-column:last-of-type {
+  padding-right: 0;
+}
+
+.guide-section-sidebar {
+
+}
+
+.guide-section-article {
+
+}
+
+@media (min-width: 1000px) {
+  .guide-section-sidebar {
+    float: left;
+    width: 25%;
+  }
+
+  .guide-section-article {
+    float: left;
+    width: 75%;
+  }
+}

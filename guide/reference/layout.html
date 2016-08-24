@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% set title = "Reference - " + page %}
+
+{% block main %}
+  <div class="dash-wrapper">
+    <div class="guide-section-sidebar dash-pad-top-gamma">
+      {% block sidebar %}
+        {% include "reference/navigation.html" %}
+      {% endblock %}
+    </div>
+
+    <div class="guide-section-article dash-pad-bottom-epsilon">
+      {% block article %}
+        Reference page content.
+      {% endblock %}
+    </div>
+  </div>
+{% endblock %}

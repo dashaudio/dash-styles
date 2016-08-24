@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>loading</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="7.17686128%" y1="29.7091131%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="loading">
+            <path d="M25,50 C38.8071187,50 50,38.8071187 50,25 C50,11.1928813 38.8071187,0 25,0 C11.1928813,0 0,11.1928813 0,25 C0,38.8071187 11.1928813,50 25,50 Z M25,42 C34.3888407,42 42,34.3888407 42,25 C42,15.6111593 34.3888407,8 25,8 C15.6111593,8 8,15.6111593 8,25 C8,34.3888407 15.6111593,42 25,42 Z" id="Combined-Shape" fill="#000000" opacity="0"></path>
+            <path d="M42,25 C42,15.6111593 34.3888407,8 25,8 C15.6111593,8 8,15.6111593 8,25 L8,6.66954719 C12.4607955,2.53059226 18.434872,0 25,0 C38.8071187,0 50,11.1928813 50,25 C50,27.209139 48.209139,29 46,29 C43.790861,29 42,27.209139 42,25 Z" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+{% extends "reference/layout.html" %}
+{% set page = "Navigation" %}
+
+{% block article %}
+  <h1>Navigation</h1>
+
+  <p>A general purpose top-level navigation bar.</p>
+
+  <pre class="dash-text-size-alpha">
+    &lt;div class=&quot;dash-navigation&quot;&gt;
+      &lt;span class=&quot;dash-navigation-item&quot;&gt;Home&lt;/span&gt;
+    &lt;/div&gt;</pre>
+
+  <div class="dash-navigation">
+    <span class="dash-navigation-item">Home</span>
+  </div>
+
+  <pre class="dash-text-size-alpha">
+    &lt;div class=&quot;dash-navigation&quot;&gt;
+      &lt;span class=&quot;dash-navigation-item&quot;&gt;Home&lt;/span&gt;
+      &lt;span class=&quot;dash-navigation-item&quot;&gt;Learn More&lt;/span&gt;
+      &lt;span class=&quot;dash-navigation-item&quot;&gt;Documentation&lt;/span&gt;
+      &lt;span class=&quot;dash-navigation-spacer&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;dash-navigation-item&quot;&gt;Support&lt;/span&gt;
+    &lt;/div&gt;</pre>
+
+  <div class="dash-navigation">
+    <span class="dash-navigation-item">Home</span>
+    <span class="dash-navigation-item">Learn More</span>
+    <span class="dash-navigation-item">Documentation</span>
+    <span class="dash-navigation-spacer"></span>
+    <span class="dash-navigation-item">Support</span>
+  </div>
+{% endblock %}
