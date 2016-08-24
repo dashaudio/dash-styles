@@ -1,0 +1,20 @@
+{
+  "name": "dash-styles",
+  "version": "0.0.1",
+  "description": "Dash Style Library",
+  "main": "style.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "style": "styles.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashaudio/dash-styles.git"
+  },
+  "author": "Dash Product Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashaudio/dash-styles/issues"
+  },
+  "homepage": "https://github.com/dashaudio/dash-styles#readme"
+}

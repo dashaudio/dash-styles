@@ -1,2 +1,3 @@
-# dash-styles
-Dash Style Library
+# 👗 Dash Styles
+
+Dash Style Library.
