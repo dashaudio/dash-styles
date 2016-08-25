@@ -4,6 +4,17 @@ node_js: 6.4.0
 script: npm run build
 
 deploy:
+  - provider: s3
+    bucket: dash-styles
+    region: eu-west-1
+    acl: public_read
+    local_dir: build/
+    skip_cleanup: true
+    access_key_id: "$AWS_KEY"
+    secret_access_key: "$AWS_KEY_SECRET"
+    upload_dir: "v$(node version.js)"
+    cache_control: public, max-age=315360000
+    on: { tags: true }
   - provider: npm
     skip_cleanup: true
     api_key: "$NPM_KEY"
@@ -12,7 +23,8 @@ deploy:
 
 notifications:
   email: false
-  slack: "$SLACK_KEY"
+  slack:
+    secure: "OXbelRR1hlzQXW6/L1uv8V1T8AsMnIPjgPjko8CcDgqMgoISyxCrL5j10Md2it9CEOplZNrsrt0uB+Fgw7ZOswVNdmP+Pc3wYUCZJG9ODpX4XsUtoZTgcBaSFGrUF1Ntx6aOsdh+dJtiMH4spCrv49orN3pl4qA7Mj0XV7VHODcE6AptkKro5CmWMkk1wpWuP/2jzggOl7aSGrv6qwjQ6PS91rHKccyn0GpXLdqezYLwbuyUizuoTQDs3tBbPrxLVEgtsDjYiCJ8aQEhtAMXUTHLslGyIxJdQiOzvMu4XlpxZYZGwvOgNs+EMUHDmeC6COcnleNT20PtBvo+FLpjJucg52Is0bFJW4hOAI2flKFCm8SqdWkqf2B8u4C7fTv0Gf9gtBSSUuNaz1D7Uub7omYXP/iXkeq9jcyUUZYyJ0WeYmfG+9T6Sx4839gVWUQD5zpM+QiU4mrwUZR8no8GUllPtuMfxyVL4Q1uGEoRt0gqR8B3zl41whPBaJRCEGZKiAFntFwPQRqNxo0ryCzh4PyqXZ7vSQ8YWf/njU+nfnXWLJgO+qNB4Qr5HASkVk4bFzVgNykTbHg26cJGhsn9FFyNhbGypLYCyDUyGdigPfpOPmGsXoepbdho3ADK6pjxdI7Fxz9miFDT6OcDYcMSRRa/G1aOWCmWf7NmoxxZiZk="
 
 env:
   global:
