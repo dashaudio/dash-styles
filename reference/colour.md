@@ -1,5 +1,6 @@
 ---
 title: Colour
+project: styles
 category: reference
 platform: web
 language: sass

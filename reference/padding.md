@@ -1,5 +1,6 @@
 ---
 title: Padding
+project: styles
 category: reference
 platform: web
 language: sass

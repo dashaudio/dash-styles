@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+project: styles
 category: guides
 platform: web
 language: sass

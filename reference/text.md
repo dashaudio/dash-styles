@@ -1,5 +1,6 @@
 ---
 title: Text
+project: styles
 category: reference
 platform: web
 language: sass
