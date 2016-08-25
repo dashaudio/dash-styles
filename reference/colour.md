@@ -1,8 +1,9 @@
 ---
 title: Colour
+category: reference
+platform: web
+language: sass
 ---
-
-# Colour
 
 <p>
   A bunch of classes for use of our colour palette. Definitions can be found

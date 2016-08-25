@@ -1,8 +1,9 @@
 ---
 title: Text
+category: reference
+platform: web
+language: sass
 ---
-
-# Text
 
 <p>
   A bunch of classes for fine-grained styling of text. For super-simple default styling of HTML
