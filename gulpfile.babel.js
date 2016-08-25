@@ -8,7 +8,7 @@ import replace from 'gulp-token-replace'
 import { version } from './package.json'
 
 const tokens = {
-  domain: process.env.DASH_ASSETS_BASE || '', version
+  domain: process.env.DASH_STYLES_DOMAIN || '', version
 }
 
 gulp.task('styles:sources', () => {

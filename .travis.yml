@@ -28,4 +28,4 @@ notifications:
 
 env:
   global:
-    - DASH_ASSETS_BASE="https://styles.dashaudio.co/versions/v$(node version.js)"
+    - DASH_STYLES_DOMAIN="https://styles.dashaudio.co/v$(node version.js)"
