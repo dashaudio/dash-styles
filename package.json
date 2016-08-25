@@ -5,7 +5,8 @@
   "main": "styles.scss",
   "files": [
     "build/styles.css",
-    "build/**/*.scss"
+    "build/**.scss",
+    "build/**.md"
   ],
   "scripts": {
     "start": "gulp serve",

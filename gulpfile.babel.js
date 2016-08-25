@@ -49,6 +49,16 @@ gulp.task('images', () => {
     .pipe(gulp.dest('build/images/'))
 })
 
+gulp.task('documentation:guides', () => {
+  return gulp.src('guides/**.md')
+    .pipe(gulp.dest('build/documentation/guides/'))
+})
+
+gulp.task('documentation:reference', () => {
+  return gulp.src('reference/**.md')
+    .pipe(gulp.dest('build/documentation/reference/'))
+})
+
 gulp.task('watch', () => {
   gulp.watch(['styles/**/*'], ['styles'])
   gulp.watch(['styles/**/*', 'guide/**/*'], ['guide'])
@@ -62,8 +72,9 @@ gulp.task('connect', () => {
 
 gulp.task('styles', ['styles:sources', 'styles:minified'])
 gulp.task('guide', ['guide:markup', 'guide:styles'])
+gulp.task('documentation', ['documentation:guides', 'documentation:reference'])
 
-gulp.task('build', ['styles', 'guide', 'fonts', 'images'])
+gulp.task('build', ['styles', 'guide', 'fonts', 'images', 'documentation'])
 gulp.task('serve', ['build', 'connect', 'watch'])
 
 gulp.task('default', ['build'])
