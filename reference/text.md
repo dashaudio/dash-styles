@@ -1,3 +1,7 @@
+---
+title: Text
+---
+
 # Text
 
 <p>
