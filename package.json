@@ -5,8 +5,8 @@
   "main": "styles.scss",
   "files": [
     "build/styles.css",
-    "build/**.scss",
-    "build/**.md"
+    "build/**/*.scss",
+    "build/**/*.md"
   ],
   "scripts": {
     "start": "gulp serve",
@@ -24,7 +24,7 @@
     "url": "https://github.com/dashaudio/dash-styles/issues"
   },
   "homepage": "https://github.com/dashaudio/dash-styles#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-1": "^6.13.0",
     "gulp": "^3.9.1",
